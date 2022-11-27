@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block content %}
 
 <body>
-    <h1>達谷窟毘沙門堂へ行き以下の謎を解け</h1>
+    <!-- <header class="header">
+    <h1>謎解き in Hiraizumi</h1>
+    </header> -->
+    <h2>達谷窟毘沙門堂へ行き以下の謎を解け</h2>
     <h2>岩にて怒りし神を探せ</h2>
     <a href="https://goo.gl/maps/tibLgZJnXeK3fTJd9">地図:達谷窟毘沙門堂</a>
     <form action="/index2" method="post">
         <label for="test">解答欄：</label>
         <input type="text" name="test" id="test" placeholder="神の名前" required>
-        <button class="btn">送信</button>
+        <button class="btn btn-success">送信</button>
     </form>
 </body>
 
-</html>
+{% endblock %}

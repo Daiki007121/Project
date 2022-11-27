@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% extends "layout.html" %}
+
+{% block content %}
+
 <body>
     <h1>熊野三社へ行き以下の謎を解け</1>
-     <h2>熊野にて、礼を学び古の歌を唱えよ</h2>
-     <a href="https://goo.gl/maps/78aTVJx6FEZHjFy89">地図</a>
-    <form action="/index3" method="post">
-   <label for="test">解答欄：</label>
-   <input type="text" name="test" id="test" placeholder="歌の名前" required>
-   <button class="btn">送信</button>
- </form>
+        <h2>熊野にて、礼を学び古の歌を唱えよ</h2>
+        <a href="https://goo.gl/maps/78aTVJx6FEZHjFy89">地図</a>
+        <form action="/index3" method="post">
+            <label for="test">解答欄：</label>
+            <input type="text" name="test" id="test" placeholder="歌の名前" required>
+            <button class="btn btn-success">送信</button>
+        </form>
 </body>
-</html>
+
+{% endblock %}
