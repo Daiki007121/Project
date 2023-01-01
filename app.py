@@ -15,11 +15,6 @@ app.secret_key = secrets.token_urlsafe(32)
 @app.route("/")
 def index():
 
-    
-    # if 
-    # flash("正解を入力してください")
-    # return redirect(request.url)
-
     return render_template("q1.html")
 
 
