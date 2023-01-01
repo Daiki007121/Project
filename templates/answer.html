@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body>
+
+    {% if answer_flag %}
+        <h3>正解!!</h3>
+
+    {% endif %}
+
+    <h2>問題：{{question}}</h2>
+    <a href="https://goo.gl/maps/tibLgZJnXeK3fTJd9">地図:達谷窟毘沙門堂</a>
+    <form action="/answer" method="post">
+        <input type="hidden" name="question" id="question" value="{{ question }}">
+        <input type="hidden" name="idx" id="idx" value="{{ idx }}">
+        <input type="text" name="answer" id="answer" placeholder="神の名前" required>
+        <button class="btn btn-success">送信</button>
+    </form>
+</body>
+
+{% endblock %}

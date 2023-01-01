@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<body>
+
+    <h1>クイズ新規作成ページ</h2>
+
+    <form action="/create_question" method="post">
+        問題：<input type="text" name="question" id="question" placeholder="問題" required>
+        回答：<input type="text" name="answer" id="answer" placeholder="回答" required>
+        <button class="btn btn-success">送信</button>
+    </form>
+</body>
+
+{% endblock %}
